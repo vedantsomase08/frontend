@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessibility Example</title>
+</head>
+<body>
+  <h1>Accessibility </h1>
+
+  <!-- Image with descriptive alt text -->
+  <img src="vedantdemoimg.jpeg" alt="Placeholder image showing a sample graphic" height="50px" width="50px">
+
+  <!-- Navigation using ARIA role -->
+  <div role="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Form with labels -->
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>z-index Demo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      border: 3px solid #333;
+      margin: 0 auto;
+      background: white;
+    }
+
+    .box {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .box1 {
+      background: #FF5733;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+    }
+
+    .box2 {
+      background: #33C1FF;
+      top: 100px;
+      left: 100px;
+      z-index: 2;
+    }
+
+    .box3 {
+      background: #4CAF50;
+      top: 75px;
+      left: 75px;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>z-index Demo</h1>
+  <div class="container">
+    <div class="box box1">z-index: 1</div>
+    <div class="box box2">z-index: 2</div>
+    <div class="box box3">z-index: -1</div>
+  </div>
+
+  <p>Notice how the elements stack: higher z-index appears on top.</p>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Position Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sticky Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .content {
+      margin-top: 70px; /* Give space for fixed navbar */
+      padding: 20px;
+    }
+
+    .container {
+      position: relative; /* Parent for absolute positioning */
+      width: 500px;
+      height: 300px;
+      border: 3px solid #333;
+      margin: 0 auto;
+      background: #f0f0f0;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .static {
+      background: #2196F3;
+      position: static;
+    }
+
+    .relative {
+      background: #4CAF50;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    .absolute {
+      background: #FF5722;
+      position: absolute;
+      top: 50px;
+      left: 200px;
+    }
+
+    .fixed {
+      background: #9C27B0;
+      position: fixed;
+      top: 150px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <div class="navbar">
+    Sticky Navbar (position: fixed)
+  </div>
+
+  <div class="content">
+    <h1>CSS Position </h1>
+
+    <div class="container">
+      <div class="box static">Static</div>
+      <div class="box relative">Relative</div>
+      <div class="box absolute">Absolute</div>
+      <div class="box fixed">Fixed</div>

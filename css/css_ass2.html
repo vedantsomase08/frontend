@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inline vs Block vs Inline-Block</title>
+  <style>
+    /* Common styles for visibility */
+    .btn {
+      border: 2px solid #3498db;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #f0f0f0;
+    }
+
+    /* Inline element */
+    .inline {
+      display: inline;
+    }
+
+    /* Block element */
+    .block {
+      display: block;
+    }
+
+    /* Inline-block element */
+    .inline-block {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Button Display Types</h1>
+
+  <!-- Buttons with different display types -->
+  <span class="btn inline">Inline</span>
+  <div class="btn block">Block</div>
+  <span class="btn inline-block">Inline-Block</span>
+
+  <h2>Difference between Inline and Block Elements</h2>
+  <p>
+    <strong>Inline elements</strong> (e.g., &lt;span&gt;) do not start on a new line and only take up as much width as needed. <br>
+    <strong>Block elements</strong> (e.g., &lt;div&gt;) always start on a new line and take up the full width available. <br>
+    <strong>Inline-block elements</stron
